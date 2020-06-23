@@ -12,45 +12,15 @@
 	<title>Yunhe Wang's Homepage</title>
 
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" type="image/png" href="images/panda.png">
+	<link rel="icon" type="image/png" href="images/inc.png">
 
 	<script data-ad-client="ca-pub-4826497670839648" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 	<style type="text/css">
-	.newcss{position:fixed;top:0px; background: #880000;width: 100%;}
-
-	.container {
-	    height: 0; position: relative;  overflow: hidden;
-	    margin: 0px;
-	    -webkit-transition: height 0.6s;
-	    -moz-transition: height 0.6s;
-	    -o-transition: height 0.6s;
-	    transition: height 0.6s;
-	}
-	a:link,a:visited{ 
-	 text-decoration:none;
-	} 
-	a:hover{ 
-	 text-decoration:underline; 
-	} 
-	.more{
-	            text-align: center;
-	            position: relative;
-	        }
-	.more:after,.more:before{
-	            content: "";
-	            position: absolute;
-	            top: 50%;
-	            background: #7a7a7a;
-	            height: 1px;
-	            width: 35%;
-	        }
-	.more:after{
-	            left: 50px;
-	        }
-	.more:before{
-	            right: 50px;
-	        }
+	.newcss{
+		position:fixed;
+		top:0px;
+		width: 100%;}
 	</style>
 
 	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
@@ -63,37 +33,12 @@
 	    {$("#menu").removeClass("newcss");}
 	    })
 	})
-
-	$(function() {
-	    var eleBtn = document.getElementById("button"),
-	        eleMore = document.getElementsByClassName("container");
-	    
-	    var display = false;
-	    
-	    eleBtn.onclick = function() {
-	        display = !display;
-	        for (i = 0, len = eleMore.length, text = ""; i < len; i++) { 
-	              var h = window.getComputedStyle(eleMore[i]).height; //同样能获取及时的尺寸，支持IE、Chrome、Firefox,只是获取到的是数值不带单位
-	              eleMore[i].style.height = display? "auto": "0px";
-	        }
-	        if (eleBtn.text=="Less")
-	            eleBtn.text="More";
-	          else
-	            eleBtn.text="Less";
-	        return false;
-	    };
-	})();
 	</script>
-	<script> 
-	    $(function(){
-	      $("#includedContent").load("publications.html"); 
-	    });
-	</script> 
 
 </head>
 
 <body>
-<a name="home"></a>
+<a name="home" style="position:relative;top:-50px;"></a>
 <div id="menu">
 	<ul>
 		<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody><tr>
@@ -151,7 +96,7 @@
             </tr>
         </tbody></table>
 
-        <a name="projects"></a>
+        <a name="projects" style="position: relative;top:-50px;"></a>
    	    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		    <tr>
 			<td style="padding:20px;width:100%;vertical-align:middle">
@@ -181,7 +126,7 @@
 			</tr>
 	    </tbody></table>
 
-	    <a name="publications"></a>
+	    <a name="publications" style="position:relative;top:-50px;"></a>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		    <tr>
 			<td style="padding:20px;width:100%;vertical-align:middle">
@@ -480,13 +425,13 @@
 		    </tr>
         </tbody></table>
 
-        <a name="talks"></a>
+        <a name="talks" style="position:relative;top:-50px;"></a>
 		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Talks</heading>
               <p><li>06/2020, "<a href="http://valser.org/webinar/slide/slides/20200603/%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9-%E5%B7%A5%E4%B8%9A%E7%95%8C%E5%92%8C%E5%AD%A6%E6%9C%AF%E7%95%8C%E7%9A%84%E5%B7%AE%E5%BC%82.pdf"><em>AI on the Edge - Discussion on the Gap Between Industry and Academia</em></a>" at <a href="http://valser.org/"><strong>VALSE</strong></a> Webinar.  </p>
-              <p><li>05/2020, "<a href="https://www.bilibili.com/video/av925692420/"> <em>Edge AI: Progress and Future Directions</em></a>" at <a href="https://www.qbitai.com/"> <strong>QbitAI</strong> </a>. </p>
+              <p><li>05/2020, "<a href="https://www.bilibili.com/video/av925692420/"> <em>Edge AI: Progress and Future Directions</em></a>" at <a href="https://www.qbitai.com/"> <strong>QbitAI</strong></a> using <a href="https://www.bilibili.com/"><strong>bilibili</strong></a>. </p>
               </td>
           </tr>
         </tbody></table>
@@ -523,13 +468,12 @@
 			<p align="right"><font size="2">
 			<a href="https://info.flagcounter.com/HwGN"><img src="https://s11.flagcounter.com/count2/HwGN/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
 			<br>
-			Thanks to <a href="https://jonbarron.info/"><strong>Jon Barron</strong></a> and <a href="http://changxu.xyz/"><strong>Chang Xu</strong></a>for sharing their codes.
+			Thanks to <a href="https://jonbarron.info/"><strong>Jon Barron</strong></a> and <a href="http://changxu.xyz/"><strong>Chang Xu</strong></a> for sharing their codes.
 			<br>
-			The icon used in this page is shared from <a href="https://icons8.com/icon/16093/panda"><strong>Icons8</strong></a>.</p>
+			The icon used in this page is shared from <a target="_blank" href="https://icons8.com/icons/set/test-account"><strong>Icons8</strong></a>.</p>
 			</td>
             </tr>
         </tbody></table>
 
 </body>
-
 </html>
