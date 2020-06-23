@@ -136,7 +136,6 @@ padding: 0;
 background: #ffffff;
 }
 
-
 #menu {
 background: #003264;
 height: 50px;
@@ -160,8 +159,4 @@ padding: 0 10px;
 #menu ul li a {
 text-decoration: none;
 color: white;
-}
-#menu ul li a:hover {
-color: #ffffbb;
-text-decoration: none;
 }
