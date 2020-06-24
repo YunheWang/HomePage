@@ -1,119 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <title>Yunhe Wang's Homepage</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="keywords" content="Yunhe Wang, YunheWang, wangyunhe, Yunhe, Wang Yunhe, Computer, Vision, Deep, Machine, Learning, Huawei, Noah, Peking, PKU" />
 <meta name="author" content="Yunhe Wang">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Yunhe Wang is a Senior Researcher of Huawei Noah's Ark Lab." />
-<meta name="google-site-verification" content="sL6Eso6aCvLGxCvM76nGFfrCDI4uYPCDA8qYewUY8KM" />
+
 
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="font-awesome.min.css">
+
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+
 
 <link rel="icon" type="image/png" href="images/inc.png">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170611143-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  window.dataLayer = window.dataLayer || []
+;  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-170611143-1');
 </script>
 
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
 
+<body class="w3-content" style="max-width:1200px">
 
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card" >
-    
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-        <a href="#publications" class="w3-bar-item w3-button w3-padding-large w3-hide-small ">Publications</a>
-        <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projects</a>
-
-        <div class="w3-dropdown-hover w3-hide-small w3-right">
-          <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="#news" class="w3-bar-item w3-button">News</a>
-            <a href="#talks" class="w3-bar-item w3-button">Talks</a>
-            <a href="#service" class="w3-bar-item w3-button">Service</a>
-            <a href="#award" class="w3-bar-item w3-button">Awards</a>
-          </div>
-        </div>
-
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#news" class="w3-bar-item w3-button">News</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#talks" class="w3-bar-item w3-button">Talks</a>
+    <a href="#publications" class="w3-bar-item w3-button">Publications</a>
+    <a href="#service" class="w3-bar-item w3-button">Service</a>
+    <a href="#awards" class="w3-bar-item w3-button">Awards</a>
   </div>
-</div>
+</nav>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-	<a href="#publications" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Publications</a>
-    <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Projects</a>
-	<a href="#news" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">News</a>
-	<a href="#talks" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Talks</a>
-	<a href="#service" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Service</a>
-	<a href="#award" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Awards</a>
-</div>
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide"></div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
- <!-- The Home Section -->
-  <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="home">
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- The Home Section -->
+    <div class="w3-container w3-padding-32" id="home">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
-                <h2 class="w3-wide">Yunhe Wang</h2>
+                <h1>Yunhe Wang</h1>
               </p>
-              <p p class="w3-justify">
-                I am a senior researcher at <a style="color: #447ec9" href="https://www.noahlab.com.hk/">Huawei Noah's Ark Lab</a>, Beijing, where I work on deep learning, model compression, and computer vision, etc.
-              </p>
-              <p class="w3-justify">
-                I did my PhD at school of EECS, <a style="color: #447ec9" href="https://www.pku.edu.cn/">Peking University</a>, where I was co-advised by <a style="color: #447ec9" href="https://eecs.pku.edu.cn/info/1505/6629.htm">Prof. <a style="color: #447ec9" href="https://dblp.org/pers/hd/x/Xu_0006:Chao">Chao Xu</a></a> and <a style="color: #447ec9" href="https://sydney.edu.au/engineering/about/our-people/academic-staff/dacheng-tao.html">Prof. <a style="color: #447ec9" href="https://scholar.google.com.sg/citations?user=RwlJNLcAAAAJ">Dacheng Tao</a></a>. I did my bachelors at school of science, <a style="color: #447ec9" href="https://en.xidian.edu.cn/">Xidian University</a>.
+              <p>
+                I am a senior researcher at <a href="https://www.noahlab.com.hk/">Huawei Noah's Ark Lab</a>, Beijing, where I work on deep learning, model compression, and computer vision, etc.
+                <br>
+                I did my PhD at school of EECS, <a href="https://www.pku.edu.cn/">Peking University</a>, where I was co-advised by <a href="https://eecs.pku.edu.cn/info/1505/6629.htm">Prof. <a href="https://dblp.org/pers/hd/x/Xu_0006:Chao">Chao Xu</a></a> and <a href="https://sydney.edu.au/engineering/about/our-people/academic-staff/dacheng-tao.html">Prof. <a href="https://scholar.google.com.sg/citations?user=RwlJNLcAAAAJ">Dacheng Tao</a></a>. I did my bachelors at school of science, <a href="https://en.xidian.edu.cn/">Xidian University</a>.
               </p>
               <p class="w3-center">
-                <a style="color: #447ec9" href="mailto:yunhe.wang@huawei.com">Email</a> &nbsp/&nbsp
-                <a style="color: #447ec9" href="https://scholar.google.com/citations?user=isizOkYAAAAJ">Google Scholar</a> &nbsp/&nbsp
-                <a style="color: #447ec9" href="https://cn.linkedin.com/in/yunhewangpku"> LinkedIn </a> &nbsp/&nbsp
-                <a style="color: #447ec9" href="https://dblp.org/pers/w/Wang:Yunhe.html"> DBLP </a> &nbsp/&nbsp
-                <a style="color: #447ec9" href="https://www.zhihu.com/people/YunheWang"> Zhi Hu </a>
+                <i class="fa fa-fw fa-envelope"></i><a href="mailto:yunhe.wang@huawei.com">Email</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=isizOkYAAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://cn.linkedin.com/in/yunhewangpku"> LinkedIn </a> &nbsp/&nbsp
+                <a href="https://dblp.org/pers/w/Wang:Yunhe.html"> DBLP </a> &nbsp/&nbsp
+                <a href="https://www.zhihu.com/people/YunheWang"> Zhi Hu </a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/YunheWang_circle.jpg" class="hoverZoomLink">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/YunheWang_circle.jpg">
             </td>
           </tr>
         </tbody></table>
   </div>
 
-  <!-- The News Section -->
-  <div class="w3-container w3-content w3-left-align w3-padding-32" style="max-width:800px" id="news">
-    <h2 class="w3-wide">News</h2>
-      <p><li> 06/2020, two papers have been accepted by <a style="color: #447ec9" href="https://icml.cc/Conferences/2020/AcceptedPapersInitial">ICML 2020</a>.</p>
-      <p><li> 02/2020, seven papers have been accepted by <a style="color: #447ec9" href="http://openaccess.thecvf.com/menu.py">CVPR 2020</a>.</p>
-      <p><li> 01/2020, one paper has been accepted by <a style="color: #447ec9" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE TNNLS</a>.</p>
-      <p><li> 11/2019, three papers have been accepted by <a style="color: #447ec9" href="https://aaai.org/Conferences/AAAI-20/wp-content/uploads/2020/01/AAAI-20-Accepted-Paper-List.pdf">AAAI 2020</a>.</p>
+<!-- The News Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="news">
+   <h1>News</h1>
+      <p><li> 06/2020, two papers have been accepted by <a href="https://icml.cc/Conferences/2020/AcceptedPapersInitial">ICML 2020</a>.</li></p>
+      <p><li> 02/2020, seven papers have been accepted by <a href="http://openaccess.thecvf.com/menu.py">CVPR 2020</a>.</li></p>
+      <p><li> 01/2020, one paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE TNNLS</a>.</li></p>
+      <p><li> 11/2019, three papers have been accepted by <a href="https://aaai.org/Conferences/AAAI-20/wp-content/uploads/2020/01/AAAI-20-Accepted-Paper-List.pdf">AAAI 2020</a>.</li></p>
   </div>
-
-  <!-- The Projects Section -->
-  <div class="w3-container w3-content w3-left-align w3-padding-32" style="max-width:800px" id="projects">
-    <h2 class="w3-wide">Projects</h2>
+<!-- The Projects Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h1>Recent Projects</h1>
     <p class="w3-justify">
-      <em>
-            Actually, model compression is a kind of technique for developing portable deep neural networks with lower memory and computation costs. I have done several projects in Huawei including some smartphones' applications in 2019 and 2020 (e.g. Mate 30 and Honor V30). Currently, I am leading the AdderNet project, which aims to develop a series of deep learning models using only additions (<a style="color: #447ec9" href="https://www.reddit.com/r/MachineLearning/comments/ekw2s1/r_addernet_do_we_really_need_multiplications_in/">Discussions on Reddit</a>).
-      </em>
+        Actually, model compression is a kind of technique for developing portable deep neural networks with lower memory and computation costs. I have done several projects in Huawei including some smartphones' applications in 2019 and 2020 (e.g. Mate 30 and Honor V30). Currently, I am leading the AdderNet project, which aims to develop a series of deep learning models using only additions (<a href="https://www.reddit.com/r/MachineLearning/comments/ekw2s1/r_addernet_do_we_really_need_multiplications_in/">Discussions on Reddit</a>).
     </p>
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
@@ -125,7 +113,7 @@ body {font-family: "Lato", sans-serif}
       <td style="padding:20px;width:75%;vertical-align:middle">
         <strong>AI on Ascend: Real-Time Video Style Transfer</strong>
         <br>
-        <a style="color: #447ec9" href="https://www.huaweicloud.com/intl/en-us/HDC.Cloud.html"><em>Huawei Developer Conference</em> (HDC) 2020</a> | <a style="color: #447ec9" href="https://developer.huaweicloud.com/exhibition/Atlas_neural_style.html">Online Demo</a>
+        <a href="https://www.huaweicloud.com/intl/en-us/HDC.Cloud.html"><em>Huawei Developer Conference</em> (HDC) 2020</a> | <a  href="https://developer.huaweicloud.com/exhibition/Atlas_neural_style.html">Online Demo</a>
         <p class="w3-justify">
         This project aims to develop a video style transfer system on the <strong>Huawei Atlas 200 DK AI developer Kit</strong>. The latency of the original model for processing one image is about <span style="color:red">630ms</span>. After accelerating it using our method, the lantency now is about <span style="color:red">40ms</span>. 
         </p>  
@@ -135,22 +123,18 @@ body {font-family: "Lato", sans-serif}
   </div>
   
   <!-- The Talks Section -->
-  <div class="w3-container w3-content w3-left-align w3-padding-32" style="max-width:800px" id="talks">
-    <h2 class="w3-wide">Talks</h2>
-    <p class="w3-left-align" style="line-height:200%">
-      • 06/2020, "<a style="color: #447ec9" href="http://valser.org/webinar/slide/slides/20200603/%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9-%E5%B7%A5%E4%B8%9A%E7%95%8C%E5%92%8C%E5%AD%A6%E6%9C%AF%E7%95%8C%E7%9A%84%E5%B7%AE%E5%BC%82.pdf"><em>AI on the Edge - Discussion on the Gap Between Industry and Academia</em></a>" at <a style="color: #447ec9" href="http://valser.org/"><strong>VALSE</strong></a> Webinar.
-      <br>
-      • 05/2020, "<a style="color: #447ec9" href="https://www.bilibili.com/video/av925692420/"> <em>Edge AI: Progress and Future Directions</em></a>" at <a style="color: #447ec9"href="https://www.qbitai.com/"> <strong>QbitAI</strong></a> using <a style="color: #447ec9" href="https://www.bilibili.com/"><strong>bilibili</strong></a>.
-    </p>
+  <div class="w3-container w3-light-grey w3-padding-32" id="talks">
+    <h1>Talks</h1>
+	    <p><li> 06/2020, "<a href="http://valser.org/webinar/slide/slides/20200603/%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9-%E5%B7%A5%E4%B8%9A%E7%95%8C%E5%92%8C%E5%AD%A6%E6%9C%AF%E7%95%8C%E7%9A%84%E5%B7%AE%E5%BC%82.pdf"><em>AI on the Edge - Discussion on the Gap Between Industry and Academia</em></a>" at <a  href="http://valser.org/"><strong>VALSE</strong></a> Webinar.</li></p>
+	    <p><li> 05/2020, "<a href="https://www.bilibili.com/video/av925692420/"> <em>Edge AI: Progress and Future Directions</em></a>" at <a href="https://www.qbitai.com/"> <strong>QbitAI</strong></a> using <a  href="https://www.bilibili.com/"><strong>bilibili</strong></a>.</li></p>
   </div>
-
-   <!-- The Publications Section -->
-  <div class="w3-container w3-content w3-left-align w3-padding-32" style="max-width:800px" id="publications">
-    <h2 class="w3-wide">Research</h2>
+ <!-- The Publications Section -->
+  <div class="w3-container w3-padding-32"" id="publications">
+    <h1>Research</h1>
       <p class="w3-left-align" style="line-height:200%">
-        <em>I'm interested in devleoping <strong>efficient models</strong> for computer vision (e.g. classification, detection, and super-resolution) using pruning, quantization, distilaltion, NAS, etc.</em>
+        I'm interested in devleoping <strong>efficient models</strong> for computer vision (e.g. classification, detection, and super-resolution) using pruning, quantization, distilaltion, NAS, etc.
       </p>
-    <h3 class="w3-section"> Conference Papers:</h3>
+    <h3> Conference Papers:</h3>
 
     <ol>
 
@@ -397,7 +381,7 @@ body {font-family: "Lato", sans-serif}
 
       </ol>
 
-      <h3 class="w3-section"> Journal Papers:</h3>
+      <h3> Journal Papers:</h3>
 
       <ol>
 
@@ -437,75 +421,79 @@ body {font-family: "Lato", sans-serif}
 
     </p>
   </div>
-  
 
 <!-- The Services Section -->
-  <div class="w3-container w3-content w3-left-align w3-padding-32" style="max-width:800px" id="service">
-    <h2 class="w3-wide">Service</h2>
-      <p><li> Senior Program Committee Members of <a style="color: #447ec9" href="https://www.ijcai20.org/">IJCAI 2020</a> and <a style="color: #447ec9" href="https://www.ijcai19.org/program-committee.html">IJCAI 2019</a>.</p>
+  <div class="w3-container w3-light-grey w3-padding-32" id="service">
+    <h1>Service</h1>
+      <p><li> Senior Program Committee Members of <a href="https://www.ijcai20.org/">IJCAI 2020</a> and <a href="https://www.ijcai19.org/program-committee.html">IJCAI 2019</a>.</p>
       <p><li> Journal Reviewers of IJCV, IEEE T-IP, IEEE T-NNLS, IEEE TMM, IEEE T-KDE, etc.</p>
       <p><li> Program Committee Members of NeurIPS 2020, ICML 2020, ECCV 2020, CVPR 2020, ICLR 2020, AAAI 2020, ICCV 2019, CVPR 2019, ICLR 2019, AAAI 2019, IJCAI 2018, AAAI 2018, NeurIPS 2018, etc.</p>
   </div>
 
-<!-- The Awards Section -->
-  <div class="w3-container w3-content w3-left-align w3-padding-64" style="max-width:800px" id="award">
-    <h2 class="w3-wide">Awards</h2>
-    <p><li> 2017, <a style="color: #447ec9" href="https://research.google/outreach/phd-fellowship/recipients/?category=2017">Google PhD Fellowship</a></p>
-    <p><li> 2017, <a style="color: #447ec9" href="http://scholarship.baidu.com/">Baidu Scholarship</a></p>
+  <!-- The Awards Section -->
+  <div class="w3-container w3-padding-32" id="award">
+    <h1>Awards</h1>
+    <p><li> 2017, <a href="https://research.google/outreach/phd-fellowship/recipients/?category=2017">Google PhD Fellowship</a></p>
+    <p><li> 2017, <a href="http://scholarship.baidu.com/">Baidu Scholarship</a></p>
     <p><li> 2017, President's PhD Scholarship, <em>Peking University</em></p>
     <p><li> 2017, National Scholarship for Graduate Students</p>
     <p><li> 2016, National Scholarship for Graduate Students</p>
   </div>  
 
-  <div class="w3-container w3-content w3-left-align w3-padding-64" style="max-width:800px">
-      <p class="w3-right-align">
-      <a style="color: #447ec9" href="https://info.flagcounter.com/HwGN"><img src="https://s11.flagcounter.com/count2/HwGN/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-      <br>
-      Powered by <a style="color: #447ec9" href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>.
-      The icon used in this page is shared from <a target="_blank" href="https://icons8.com/icons/set/test-account"><strong>Icons8</strong></a>.
-      <br>
-      Thanks to <a style="color: #447ec9" href="https://jonbarron.info/"><strong>Jon Barron</strong></a> and <a style="color: #447ec9" href="http://changxu.xyz/"><strong>Chang Xu</strong></a> for sharing their codes.
-      </p>
+  <div class="w3-black w3-center w3-padding-24">
+  	 Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> and <a target="_blank" href="https://icons8.com/icons/set/test-account">Icons8</a>.<br>
+	 <!-- Default Statcounter code for Yunhe Wang's Homepage
+	https://www.wangyuhe.site -->
+	No.
+	<script type="text/javascript">
+	var sc_project=12347113; 
+	var sc_invisible=0; 
+	var sc_security="21aca5d1"; 
+	var sc_https=1; 
+	var scJsHost = "https://";
+	document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
+	</script> Visitor. Welcome!
+
+	<noscript>
+		<div class="statcounter"><a title="Web Analytics Made Easy -
+	StatCounter" href="https://statcounter.com/" target="_blank"><img
+	class="statcounter" src="https://c.statcounter.com/12347113/0/21aca5d1/0/"
+	alt="Web Analytics Made Easy - StatCounter"></a></div>
+	</noscript>
+	<!-- End of Statcounter Code -->
+
   </div>
-<!-- End Page Content -->
+
+  <!-- End page content -->
 </div>
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+  } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
 }
 </script>
 
 </body>
 </html>
-
