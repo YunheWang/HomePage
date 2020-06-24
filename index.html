@@ -14,48 +14,26 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" type="image/png" href="images/inc.png">
 
-	<script data-ad-client="ca-pub-4826497670839648" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-	<style type="text/css">
-	.newcss{
-		position:fixed;
-		top:0px;
-		width: 100%;}
-	</style>
-
-	<script src="jquery-1.11.1.min.js"></script>
-
-	<script type="text/javascript">
-	$(document).ready(function(){
-	$(window).scroll(function(){
-	    if($(window).scrollTop()>$("#top").height())
-	    {$("#menu").addClass("newcss");}
-	    else
-	    {$("#menu").removeClass("newcss");}
-	    })
-	})
-	</script>
-
 </head>
 
 <body>
 
-<div id="menu">
-	<ul>
-		<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody><tr>
-			<td style="text-align:left;">
-			<li><a href="#home">Yunhe Wang</a></li>
-			</td>
-			<td style="text-align:right;padding-right:20px">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#publications">Publications</a></li>
-			<li><a href="#talks">Talks</a></li>
-			</td>
+<div class="navbar">
+	<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody><tr>
+		<td style="text-align: left;">
+			<a href="#home">Yunhe Wang</a>
+		</td>
+		<td style="text-align: right;padding-right:20px">
+			<a href="#projects">Projects</a>
+			<a href="#publications">Publications</a>
+			<a href="#talks">Talks</a>
+		</td>
 	    </tr></tbody></table>
-	</ul>
 </div>
-	
-  <a name="home"></a>
+
+<div class="main">
+	  <a class="anchor" id="home"></a>
+</div>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
@@ -98,6 +76,8 @@
             </tr>
         </tbody></table>
 
+		<a class="anchor" id="projects"></a>
+   	    
    	    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		    <tr>
 			<td style="padding:20px;width:100%;vertical-align:middle">
@@ -112,7 +92,7 @@
 		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 			<tr>
 			<td style="padding:20px;width:25%;vertical-align:middle">
-			<div class="one">
+			<div>
 				<img style="width:100%;max-width:100%" src="images/HDC2020-small.gif">
 			</div>
 			</td>
@@ -127,7 +107,8 @@
 			</tr>
 	    </tbody></table>
 
-	    <a name="publications"></a>
+	    <a class="anchor" id="publications"></a>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		    <tr>
 			<td style="padding:20px;width:100%;vertical-align:middle">
@@ -426,7 +407,7 @@
 		    </tr>
         </tbody></table>
 
-        <a name="talks"></a>
+        <a class="anchor" id="talks"></a>
 		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -475,6 +456,21 @@
 			</td>
             </tr>
         </tbody></table>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>
