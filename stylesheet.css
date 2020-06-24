@@ -105,20 +105,6 @@ name {
   font-size: 32px;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
 .fade {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -135,27 +121,34 @@ padding: 0;
 background: #ffffff;
 }
 
-#menu {
-background: #003264;
-height: 50px;
-line-height: 50px;
-color: #fff;
-font-family: 'Lato', Verdana, Helvetica, sans-serif;
-font-weight: 700
+.navbar {
+  height: 50px;
+  line-height: 50px;
+  background: #003264;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-#menu ul {
-margin: 0;
-padding: 0 0 0 10px;
-list-style-type: none;
+.navbar a {
+  display: inline;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-weight: 700
 }
 
-#menu ul li {
-display: inline; 
-text-align: center;
-padding: 0 10px;
+.main {
+  padding: 16px;
+  margin-top: 10px;
 }
-#menu ul li a {
-text-decoration: none;
-color: white;
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -40px;
+    visibility: hidden;
 }
