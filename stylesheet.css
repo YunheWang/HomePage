@@ -127,8 +127,8 @@ background: #ffffff;
 }
 
 .navbar {
-  height: 40px;
-  line-height: 40px;
+  height: 50px;
+  line-height: 50px;
   background: #003264;
   position: fixed;
   top: 0;
@@ -140,7 +140,6 @@ background: #ffffff;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
   font-size: 14px;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700
@@ -153,6 +152,6 @@ background: #ffffff;
 
 a.anchor {
     position: relative;
-    top: -30px;
+    top: -50px;
     visibility: hidden;
 }
