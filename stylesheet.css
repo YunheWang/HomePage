@@ -122,8 +122,8 @@ background: #ffffff;
 }
 
 .navbar {
-  height: 50px;
-  line-height: 50px;
+  height: 40px;
+  line-height: 40px;
   background: #003264;
   position: fixed;
   top: 0;
@@ -136,19 +136,19 @@ background: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700
 }
 
 .main {
   padding: 16px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 a.anchor {
     display: block;
     position: relative;
-    top: -40px;
+    top: -30px;
     visibility: hidden;
 }
