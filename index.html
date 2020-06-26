@@ -10,7 +10,6 @@
 
 
 <link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="font-awesome.min.css">
 
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
@@ -19,39 +18,43 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <link rel="icon" type="image/png" href="images/icons.png">
 
-<body class="w3-content" style="max-width:1200px">
+<body class="w3-content" style="max-width:1000px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-  <div class="w3-padding-64 w3-large w3-text-light-grey" style="font-weight:bold">
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <h3><b>YUNHE</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
     <a href="#" class="w3-bar-item w3-button">Home</a>
     <a href="#news" class="w3-bar-item w3-button">News</a>
     <a href="#projects" class="w3-bar-item w3-button">Projects</a>
     <a href="#talks" class="w3-bar-item w3-button">Talks</a>
-    <a href="#publications" class="w3-bar-item w3-button">Publications</a>
-    <a href="#service" class="w3-bar-item w3-button">Service</a>
+    <a href="#publications" class="w3-bar-item w3-button">Papers</a>
+    <a href="#service" class="w3-bar-item w3-button">Services</a>
     <a href="#award" class="w3-bar-item w3-button">Awards</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24 w3-wide"></div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  <div class="w3-bar-item w3-padding-24">YUNHE</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </div>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
+<div class="w3-main" style="margin-left:150px">
 
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
 
 <!-- The Home Section -->
     <div class="w3-container w3-center w3-padding-32" id="home">
-    	<img style="width:320px;height:320px; alt="profile photo" src="images/YunheWang_circle.jpg">
+    	<img style="width: 80%;max-width: 320px" alt="profile photo" src="images/YunheWang_circle.jpg">
     	<h1>Yunhe Wang</h1>
 	      <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
 	        I am a senior researcher at <a href="https://www.noahlab.com.hk/">Huawei Noah's Ark Lab</a>, Beijing, where I work on deep learning, model compression, and computer vision, etc. Before that, I did my PhD at school of EECS, <a href="https://www.pku.edu.cn/">Peking University</a>, where I was co-advised by <a href="https://eecs.pku.edu.cn/info/1505/6629.htm">Prof. <a href="https://dblp.org/pers/hd/x/Xu_0006:Chao">Chao Xu</a></a> and <a href="https://sydney.edu.au/engineering/about/our-people/academic-staff/dacheng-tao.html">Prof. <a href="https://scholar.google.com.sg/citations?user=RwlJNLcAAAAJ">Dacheng Tao</a></a>. I did my bachelors at school of science, <a href="https://en.xidian.edu.cn/">Xidian University</a>.
@@ -66,7 +69,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <!-- The News Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
-   <h1>News</h1>
+   <h2>News</h2>
       <p><li> 06/2020, two papers have been accepted by <a href="https://icml.cc/Conferences/2020/AcceptedPapersInitial">ICML 2020</a>.</li></p>
       <p><li> 02/2020, seven papers have been accepted by <a href="http://openaccess.thecvf.com/menu.py">CVPR 2020</a>.</li></p>
       <p><li> 01/2020, one paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE TNNLS</a>.</li></p>
@@ -74,13 +77,13 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
 <!-- The Projects Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h1>Recent Projects</h1>
+    <h2>Recent Projects</h2>
     <p class="w3-justify">
         Actually, model compression is a kind of technique for developing portable deep neural networks with lower memory and computation costs. I have done several projects in Huawei including some smartphones' applications in 2019 and 2020 (e.g. Mate 30 and Honor V30). Currently, I am leading the AdderNet project, which aims to develop a series of deep learning models using only additions (<a href="https://www.reddit.com/r/MachineLearning/comments/ekw2s1/r_addernet_do_we_really_need_multiplications_in/">Discussions on Reddit</a>).
     </p>
 
-        <h3><li>AI on Ascend: Real-Time Video Style Transfer</li></h3>
-        <img style="width:120px;" src="images/atlas200.png"> &nbsp&nbsp <img style="width:200px;" src="images/video.gif">
+        <h4><li>AI on Ascend: Real-Time Video Style Transfer</li></h4>
+        <img style="width:30%;" src="images/atlas200.png"> &nbsp&nbsp <img style="width:50%;" src="images/video.gif">
         <p class="w3-justify">
         <a href="https://www.huaweicloud.com/intl/en-us/HDC.Cloud.html"><em>Huawei Developer Conference</em> (HDC) 2020</a> | <a  href="https://developer.huaweicloud.com/exhibition/Atlas_neural_style.html">Online Demo</a>
     	</p>
@@ -91,17 +94,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   
   <!-- The Talks Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="talks">
-    <h1>Talks</h1>
+    <h2>Talks</h2>
 	    <p><li> 06/2020, "<a href="http://valser.org/webinar/slide/slides/20200603/%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9-%E5%B7%A5%E4%B8%9A%E7%95%8C%E5%92%8C%E5%AD%A6%E6%9C%AF%E7%95%8C%E7%9A%84%E5%B7%AE%E5%BC%82.pdf"><em>AI on the Edge - Discussion on the Gap Between Industry and Academia</em></a>" at <a  href="http://valser.org/"><strong>VALSE</strong></a> Webinar.</li></p>
 	    <p><li> 05/2020, "<a href="https://www.bilibili.com/video/av925692420/"> <em>Edge AI: Progress and Future Directions</em></a>" at <a href="https://www.qbitai.com/"> <strong>QbitAI</strong></a> using <a  href="https://www.bilibili.com/"><strong>bilibili</strong></a>.</li></p>
   </div>
  <!-- The Publications Section -->
   <div class="w3-container w3-padding-32"" id="publications">
-    <h1>Research</h1>
+    <h2>Research</h2>
       <p class="w3-left-align" style="line-height:200%">
         I'm interested in devleoping <strong>efficient models</strong> for computer vision (e.g. classification, detection, and super-resolution) using pruning, quantization, distilaltion, NAS, etc.
       </p>
-    <h3> Conference Papers:</h3>
+    <h4> Conference Papers:</h4>
 
     <ol>
 
@@ -348,7 +351,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
       </ol>
 
-      <h3> Journal Papers:</h3>
+      <h4> Journal Papers:</h4>
 
       <ol>
 
@@ -391,18 +394,18 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <!-- The Services Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="service">
-    <h1>Service</h1>
+    <h2>Services</h2>
       <p><li> Senior Program Committee Members of <a href="https://www.ijcai20.org/">IJCAI 2020</a> and <a href="https://www.ijcai19.org/program-committee.html">IJCAI 2019</a>.</p>
-      <p><li> Journal Reviewers of IJCV, IEEE T-IP, IEEE T-NNLS, IEEE TMM, IEEE T-KDE, etc.</p>
+      <p><li> Journal Reviewers of <a href="https://www.springer.com/journal/11263">IJCV</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83">IEEE T-IP</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">IEEE T-MM</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">IEEE T-KDE</a>, etc.</p>
       <p><li> Program Committee Members of NeurIPS 2020, ICML 2020, ECCV 2020, CVPR 2020, ICLR 2020, AAAI 2020, ICCV 2019, CVPR 2019, ICLR 2019, AAAI 2019, IJCAI 2018, AAAI 2018, NeurIPS 2018, etc.</p>
   </div>
 
   <!-- The Awards Section -->
   <div class="w3-container w3-padding-32" id="award">
-    <h1>Awards</h1>
+    <h2>Awards</h2>
     <p><li> 2017, <a href="https://research.google/outreach/phd-fellowship/recipients/?category=2017">Google PhD Fellowship</a></p>
     <p><li> 2017, <a href="http://scholarship.baidu.com/">Baidu Scholarship</a></p>
-    <p><li> 2017, President's PhD Scholarship, <em>Peking University</em></p>
+    <p><li> 2017, President's PhD Scholarship, Peking University</p>
     <p><li> 2017, National Scholarship for Graduate Students</p>
     <p><li> 2016, National Scholarship for Graduate Students</p>
   </div>  
