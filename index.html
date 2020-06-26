@@ -4,12 +4,12 @@
 <head>
 
   <title>Yunhe Wang's Homepage</title>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <meta name="description" content="Yuhe Wang is currently a senior researcher at Huawei Noah's Ark Lab" />
-  <meta name="keywords" content="Yunhe Wang, wangyunhe, Yunhe, Wang, Deep Learning, Huawei, PKU, Computer, Vision" />
+  <meta name="description" content="Yuhe Wang is currently a senior researcher at Huawei Noah's Ark Lab">
+  <meta name="keywords" content="Yunhe Wang, wangyunhe, Yunhe, Wang, Deep Learning, Huawei, PKU, Computer, Vision">
   <meta name="author" content="Yunhe Wang" />
 
   <link rel="stylesheet" href="w3.css">
@@ -20,6 +20,35 @@
   </style>
 
   <link rel="icon" type="image/png" href="images/icons.png">
+
+  <script src="jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+
 </head>
 
 
@@ -31,7 +60,7 @@
     <h3><b>YUNHE</b></h3>
   </div>
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#news" class="w3-bar-item w3-button">News</a>
     <a href="#projects" class="w3-bar-item w3-button">Projects</a>
     <a href="#talks" class="w3-bar-item w3-button">Talks</a>
