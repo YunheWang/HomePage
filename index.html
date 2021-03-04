@@ -105,6 +105,8 @@
 <!-- The News Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
    <h2>News</h2>
+      <p><li> 03/2021, nine papers have been accepted by <a href="http://cvpr2021.theRcvf.com/">CVPR 2021</a>.</li></p>
+      <p><li> 01/2021, I will give a talk about AdderNet at <a href="https://haet2021.github.io/speakers.html">HAET ICLR 2021 workshop</a>.</li></p>
       <p><li> 12/2020, two papers have been accepted by <a href="https://aaai.org/Conferences/AAAI-21/">AAAI 2021</a>.</li></p>
       <p><li> 11/2020, I accepted the invitation to serve as an Area Chair for <a href="https://icml.cc/Conferences/2021">ICML 2021</a>.</li></p>
       <p><li> 09/2020, six papers have been accepted by <a href="https://nips.cc/Conferences/2020">NeurIPS 2020</a>.</li></p>
@@ -114,7 +116,9 @@
       <p><li> 06/2020, two papers have been accepted by <a href="https://icml.cc/Conferences/2020/AcceptedPapersInitial">ICML 2020</a>.</li></p>
       <p><li> 02/2020, seven papers have been accepted by <a href="http://openaccess.thecvf.com/menu.py">CVPR 2020</a>.</li></p>
       <p><li> 01/2020, one paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE TNNLS</a>.</li></p>
+      <!-- 
       <p><li> 11/2019, three papers have been accepted by <a href="https://aaai.org/Conferences/AAAI-20/wp-content/uploads/2020/01/AAAI-20-Accepted-Paper-List.pdf">AAAI 2020</a>.</li></p>
+      -->
   </div>
 <!-- The Projects Section -->
   <div class="w3-container w3-padding-32" id="projects">
@@ -122,6 +126,15 @@
     <p class="w3-justify">
         Actually, model compression is a kind of technique for developing portable deep neural networks with lower memory and computation costs. I have done several projects in Huawei including some smartphones' applications in 2019 and 2020 (e.g. Mate 30 and Honor V30). Currently, I am leading the AdderNet project, which aims to develop a series of deep learning models using only additions (<a href="https://www.reddit.com/r/MachineLearning/comments/ekw2s1/r_addernet_do_we_really_need_multiplications_in/">Discussions on Reddit</a>).
     </p>
+
+        <h4><li>Adder Neural Networks</li></h4>
+        <img style="width:96%;" src="images/AdderNet.png"> 
+        <p class="w3-justify">
+        <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">Project Page</a> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2101.10015.pdf">Hardware Implementation</a>
+        </p>
+        <p class="w3-justify">
+        I would like to say, <span style="color:red">AdderNet is very cool!</span> The initial idea was came up in about 2017 when climbing with some friends at Beijing. By replacing all convolutional layers (except the first and the last layers), we now can obtain comparable performance on ResNet architectures. In addition, to make the story more complete, we recent release the hardware implementation and some quantization methods. The results are quite encouraging, we can reduce both <strong>the energy consumption and thecircuit areas significantly without affecting the performance</strong>. Now, we are working on more applications to reduce the costs of launching AI algorithms such as low-level vision, detection, and NLP tasks.
+        </p> 
 
         <h4><li>GhostNet on MindSpore: SOTA Lightweight CV Networks</li></h4>
         <img style="width:96%;" src="images/GhostNet.png"> 
@@ -160,11 +173,103 @@
     <ol>
 			
       <p>
+      <li><strong>Distilling Object Detectors via Decoupled Features</strong>
+      <br>
+      Jianyuan Guo, Kai Han, <strong>Yunhe Wang</strong>, Wei Zhang, Chunjing Xu, Chang Xu
+      <br>
+      <em>CVPR</em> 2021
+      </p>
+
+      <p>
+      <li><strong>HourNAS: Extremely Fast Neural Architecture Search Through an Hourglass Lens</strong>
+      <br>
+      Zhaohui Yang, <strong>Yunhe Wang</strong>, Xinghao Chen, Jianyuan Guo, Wei Zhang, 
+      <br>
+      Chao Xu, Chunjing Xu, Dacheng Tao, Chang Xu  
+      <br>
+      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2005.14446.pdf">paper</a>
+      </p>
+
+      <p>
+      <li><strong>Manifold Regularized Dynamic Network Pruning</strong>
+      <br>
+      Yehui Tang, <strong>Yunhe Wang</strong>, Yixing Xu, Yiping Deng, Chao Xu, Dacheng Tao, Chang Xu
+      <br>
+      <em>CVPR</em> 2021 
+      </p>
+
+      <p>
+      <li><strong>Learning Student Networks in the Wild</strong>
+      <br>
+      Hanting Chen, Tianyu Guo, Chang Xu, Wenshuo Li, Chunjing Xu, Chao Xu, <strong>Yunhe Wang</strong>
+      <br>
+      <em>CVPR</em> 2021 
+      </p>
+
+      <p>
+      <li><strong>AdderSR: Towards Energy Efficient Image Super-Resolution</strong>
+      <br>
+      Dehua Song*, <strong>Yunhe Wang</strong>*, Hanting Chen, Chang Xu, Chunjing Xu, Dacheng Tao
+      <br>
+      <em>CVPR</em> 2020 (* equal contribution) | <a style="color: #447ec9" href="https://arxiv.org/pdf/2009.08891.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">code</a> | <span style="color:red"> Oral Presentation</span>
+      </p>
+
+      <p>
+      <li><strong>ReNAS: Relativistic Evaluation of Neural Architecture Search</strong>
+      <br>
+      Yixing Xu, <strong>Yunhe Wang</strong>, Kai Han, Yehui Tang, Shangling Jui, Chunjing Xu, Chang Xu
+      <br>
+      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/1910.01523.pdf">paper</a> | <span style="color:red"> Oral Presentation</span>
+      </p>
+
+      <p>
+      <li><strong>Pre-Trained Image Processing Transformer</strong>
+      <br>
+      Hanting Chen, <strong>Yunhe Wang</strong>, Tianyu Guo, Chang Xu, Yiping Deng, Zhenhua Liu, 
+      <br>
+      Siwei Ma, Chunjing Xu, Chao Xu, Wen Gao
+      <br>
+      <em>CVPR</em> 2021 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2012.00364.pdf">paper</a> 
+      </p>
+
+      <p>
+      <li><strong>Data-Free Knowledge Distillation For Image Super-Resolution</strong>
+      <br>
+      Yiman Zhang, Hanting Chen, Xinghao Chen, Yiping Deng, Chunjing Xu, <strong>Yunhe Wang</strong>
+      <br>
+      <em>CVPR</em> 2021 
+      </p>
+
+      <p>
+      <li><strong>Positive-Unlabeled Data Purification in the Wild for Object Detection</strong>
+      <br>
+      Jianyuan Guo, Kai Han, Han Wu, Xinghao Chen, Chao Zhang, Chunjing Xu, Chang Xu, <strong>Yunhe Wang</strong>
+      <br>
+      <em>CVPR</em> 2021 
+      </p>
+
+      <p>
+      <li><strong>One-shot Graph Neural Architecture Search with Dynamic Search Space</strong>
+      <br>
+      Yanxi Li, Zean Wen, <strong>Yunhe Wang</strong>, Chang Xu
+      <br>
+      <em>AAAI</em> 2021 
+      </p>
+
+      <p>
+      <li><strong>Adversarial Robustness through Disentangled Representations</strong>
+      <br>
+      Shuo Yang, Tianyu Guo, <strong>Yunhe Wang</strong>, Chang Xu
+      <br>
+      <em>AAAI</em> 2021 
+      </p>
+
+      <p>
       <li><strong>Kernel Based Progressive Distillation for Adder Neural Networks</strong>
       <br>
       Yixing Xu, Chang Xu, Xinghao Chen, Wei Zhang, Chunjing Xu, <strong>Yunhe Wang</strong>
       <br>
-      <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2009.13044.pdf">paper</a> | <span style="color:red"> Spotlight</span> 
+      <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2009.13044.pdf">paper</a> | <span style="color:red"> Spotlight</span> | <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">code</a>
       </p>
 
       <p>
@@ -190,7 +295,7 @@
       <br>
       Zhaohui Yang, <strong>Yunhe Wang</strong>, Kai Han, Chunjing Xu, Chao Xu, Dacheng Tao, Chang Xu
       <br>
-      <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/abs/2009.08695.pdf">paper</a> 
+      <em>NeurIPS</em> 2020 | <a style="color: #447ec9" href="https://arxiv.org/abs/2009.08695.pdf">paper</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.0/VGG-Small-low-bit_cifar10">code</a> 
       </p>
 
       <p>
@@ -257,7 +362,7 @@
       </p>
 
       <p>
-      <li><strong>AdderNet: Do we really need multiplications in deep learning?</strong>
+      <li><strong>AdderNet: Do We Really Need Multiplications in Deep Learning?</strong>
       <br>
       Hanting Chen*, <strong>Yunhe Wang</strong>*, Chunjing Xu, Boxin Shi, Chao Xu, Qi Tian, Chang Xu
       <br>
@@ -274,7 +379,7 @@
       </p>
 
       <p>
-      <li><strong>Hit-Detector: Hierarchical trinity architecture search for object detection</strong>
+      <li><strong>Hit-Detector: Hierarchical Trinity Architecture Search for Object Detection</strong>
       <br>
       Jianyuan Guo, Kai Han, <strong>Yunhe Wang</strong>, Chao Zhang, Zhaohui Yang, Han Wu, Xinghao Chen, Chang Xu
       <br>
@@ -339,7 +444,9 @@
       <p>
       <li><strong>Data-Free Learning of Student Networks</strong>
       <br>
-      Hanting Chen,<strong>Yunhe Wang</strong>, Chang Xu,Zhaohui Yang,Chuanjian Liu,Boxin Shi,Chunjing Xu,Chao Xu,Qi Tian
+      Hanting Chen,<strong>Yunhe Wang</strong>, Chang Xu, Zhaohui Yang, Chuanjian Liu, Boxin Shi,
+      <br>
+      Chunjing Xu, Chao Xu, Qi Tian
       <br>
       <em>ICCV</em> 2019 | <a style="color: #447ec9" href="data/2019 ICCV DAFL.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Data-Efficient-Model-Compression/tree/master/DAFL">code</a>
       </p>
@@ -475,11 +582,11 @@
       <br>
       Shuo Yang, Minjing Dong, <strong>Yunhe Wang</strong>, Chang Xu
       <br>
-      <em>IEEE TNNLS</em> 2020 | to appear
+      <em>IEEE TNNLS</em> 2020 |<a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9158560">paper</a>
       </p>
   
       <p>
-      <li><strong>Learning student networks via feature embedding</strong>
+      <li><strong>Learning Student Networks via Feature Embedding</strong>
       <br>
       Hanting Chen, <strong>Yunhe Wang</strong>, Chang Xu, Chao Xu, Dacheng Tao
       <br>
@@ -503,7 +610,7 @@
       </p>
 
       <p>
-      <li><strong>DCT inspired feature transform for image retrieval and reconstruction</strong>
+      <li><strong>DCT Inspired Feature Transform for Image Retrieval and Reconstruction</strong>
       <br>
       <strong>Yunhe Wang</strong>, Miaojing Shi, Shan You, Chao Xu
       <br>
@@ -520,8 +627,8 @@
     <h2>Services</h2>
       <p><li> Area Chair of <a href="https://icml.cc/Conferences/2021">ICML 2021</a>.</p>
       <p><li> Senior Program Committee Members of <a href="https://ijcai-21.org/">IJCAI 2021</a>, <a href="https://www.ijcai20.org/">IJCAI 2020</a> and <a href="https://www.ijcai19.org/program-committee.html">IJCAI 2019</a>.</p>
-      <p><li> Journal Reviewers of <a href="https://www.springer.com/journal/11263">IJCV</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83">IEEE T-IP</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">IEEE T-MM</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">IEEE T-KDE</a>, etc.</p>
-      <p><li> Program Committee Members of AAAI 2021, ICLR 2021, NeurIPS 2020, ICML 2020, ECCV 2020, CVPR 2020, ICLR 2020, AAAI 2020, ICCV 2019, CVPR 2019, ICLR 2019, AAAI 2019, IJCAI 2018, AAAI 2018, NeurIPS 2018, etc.</p>
+      <p><li> Journal Reviewers of <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">IEEE T-PAMI</a>, <a href="https://www.springer.com/journal/11263">IJCV</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83">IEEE T-IP</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">IEEE T-MM</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">IEEE T-KDE</a>, etc.</p>
+      <p><li> Program Committee Members of ICCV 2021, AAAI 2021, ICLR 2021, NeurIPS 2020, ICML 2020, ECCV 2020, CVPR 2020, ICLR 2020, AAAI 2020, ICCV 2019, CVPR 2019, ICLR 2019, AAAI 2019, IJCAI 2018, AAAI 2018, NeurIPS 2018, etc.</p>
   </div>
 
   <!-- The Awards Section -->
